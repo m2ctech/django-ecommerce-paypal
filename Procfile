@@ -1,1 +1,4 @@
-web: gunicorn paygateway.wsgi --log-file -
+web: gunicorn paygateway.wsgi
+release: python manage.py makemigrations --noinput
+release: python manage.py collectstatic --noinput
+release: python manage.py migrate --noinput
