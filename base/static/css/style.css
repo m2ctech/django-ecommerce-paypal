@@ -1,0 +1,25 @@
+.row {
+    display: flex;
+    justify-content: space-between;
+  }
+.card2 {
+    
+    margin: 1rem;
+    height: 500px;
+   
+  }
+.card{
+    padding: 0.4rem 1.4rem;
+  }
+ .img1 {
+    width:25%;
+    
+    
+  }
+  
+  .img2 {
+    width:40%;
+  }
+.brand-logo{
+    margin-left: 0.7rem;
+  }
