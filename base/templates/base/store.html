@@ -1,0 +1,25 @@
+{% extends 'base/template.html' %}
+{% block content %}
+          
+          <div class="container">
+            <h2>Welcome To Our Retail Mobile Store</h2>
+            <div class="row">
+              {% for product in products %}
+              <div class="s6">
+                <div class="card card2">
+                  <h6>{{ product.name }}</h6>
+                  <img class="img1" src="{{product.image_url}}" alt="{{product.name}}" >
+                  <hr>
+                  <p>{{product.description}}</p>
+                  <hr>
+                  <h4>${{ product.price }}</h4>
+                  <a class="btn" href="{% url 'checkout' product.id %}">Buy now</a>
+
+                </div>
+
+              </div>
+              {% endfor %}
+            </div>
+
+          </div>
+{% endblock content %}
